@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+</head>
+
+<body>
+
+    <h1>Update the password for Infisurf</h1>
+    <div id="main">
+        <div id="update">
+            <form action="/save" method="POST">
+                <label for="">Username</label>
+                <input type="text" name="username" id=""><br><br>
+                <label for="">Password</label>
+                <input type="text" name="password" id="">
+                <br><br>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+    </div>
+
+
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #update {
+
+
+            border: 1px solid black;
+
+            width: 400px;
+            padding: 20px;
+        }
+    </style>
+</body>
+
+</html>
