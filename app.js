@@ -9,7 +9,7 @@ app=express()
 app.set("view engine","ejs")
 app.set("views","views")
 app.use(express.urlencoded({ extended: true }))
-const PORT=process.env.PORT || 3000;
+const port=process.env.PORT || 3000;
 
 // set api for updating the password in the text file 
 app.get("/update",(req,res)=>{
@@ -65,9 +65,9 @@ app.get("/data",async (req,res)=>{
 
 
 
-app.listen(PORT,()=>{
+app.listen(port,()=>{
 
-    console.log("Server Started on PORT: "+PORT)
+    console.log("Server Started on PORT: "+port)
 })
 
 
